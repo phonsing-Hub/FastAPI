@@ -13,12 +13,12 @@ auth_router = APIRouter()
 class Auth(BaseModel):
     username: str
     password: str
+    role: str | None
 
 
 class AuthResponse(BaseModel):
     username: str
     role: str
-
     class Config:
         from_attributes = True
 

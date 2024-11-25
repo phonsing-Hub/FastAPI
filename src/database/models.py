@@ -1,7 +1,7 @@
 from sqlmodel import SQLModel, Field, Relationship
 from typing import Optional, List
 from datetime import date, datetime
-
+ 
 class Auth(SQLModel, table=True):
     __tablename__ = "authentication"
 
